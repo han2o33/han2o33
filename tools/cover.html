@@ -1,0 +1,103 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+@font-face{font-family:MJ;src:url('fonts/NanumMyeongjo-Regular.ttf')}
+@font-face{font-family:MJ;font-weight:800;src:url('fonts/NanumMyeongjo-ExtraBold.ttf')}
+@font-face{font-family:GT;src:url('fonts/NanumGothic-Regular.ttf')}
+@font-face{font-family:GT;font-weight:700;src:url('fonts/NanumGothic-Bold.ttf')}
+@page{size:148mm 210mm;margin:0}
+html,body{margin:0;padding:0}
+.cover{position:relative;width:148mm;height:210mm;overflow:hidden;color:#ece6d8;
+ background:
+  radial-gradient(ellipse 70% 45% at 50% 47%, rgba(190,150,70,.16), transparent 70%),
+  repeating-linear-gradient(135deg, rgba(255,255,255,.018) 0 2px, transparent 2px 7px),
+  linear-gradient(180deg,#1b1e24 0%,#14161b 60%,#0f1013 100%);}
+.hazard{position:absolute;left:0;right:0;height:4.2mm;
+ background:repeating-linear-gradient(-45deg,#e6b422 0 4mm,#141414 4mm 8mm);opacity:.92}
+.hazard.top{top:0}.hazard.bot{bottom:0}
+.eyebrow{position:absolute;top:15mm;left:0;right:0;text-align:center;font-family:GT;font-weight:700;
+ font-size:7pt;letter-spacing:.55em;color:#c9a55a;padding-left:.55em}
+.art{position:absolute;top:27mm;left:50%;transform:translateX(-50%);width:118mm;height:118mm}
+.title{position:absolute;top:147mm;left:0;right:0;text-align:center;font-family:MJ;font-weight:800;
+ font-size:27pt;letter-spacing:.02em;line-height:1.1}
+.title small{display:block;font-family:MJ;font-weight:400;font-size:9.5pt;letter-spacing:.12em;color:#c9a55a;margin-top:4mm}
+.parts{position:absolute;top:175mm;left:14mm;right:14mm;display:flex;justify-content:space-between;
+ font-family:GT;font-size:6.6pt;color:#a9a397;border-top:.25mm solid rgba(201,165,90,.45);padding-top:3mm}
+.parts span b{display:block;font-weight:700;color:#c9a55a;font-size:5.6pt;letter-spacing:.2em;margin-bottom:.8mm}
+.foot{position:absolute;bottom:9mm;left:0;right:0;text-align:center;font-family:GT;font-size:6pt;
+ letter-spacing:.4em;color:#6f6a60;padding-left:.4em}
+</style></head><body><div class="cover">
+<div class="hazard top"></div>
+<div class="eyebrow">DIO 연작소설 · 4부작</div>
+<svg class="art" viewBox="-200 -200 400 400" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <radialGradient id="dome" cx="40%" cy="32%" r="75%">
+   <stop offset="0" stop-color="#ff6b5b"/><stop offset=".35" stop-color="#d42a1f"/>
+   <stop offset=".8" stop-color="#8e130d"/><stop offset="1" stop-color="#5a0905"/></radialGradient>
+  <radialGradient id="gold" cx="50%" cy="50%" r="50%">
+   <stop offset=".75" stop-color="#b8924a" stop-opacity="0"/><stop offset="1" stop-color="#b8924a" stop-opacity=".25"/></radialGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#f2c534"/><stop offset="1" stop-color="#c8960f"/></linearGradient>
+  <path id="arcTop" d="M -96 0 A 96 96 0 0 1 96 0"/>
+  <path id="arcBot" d="M -104 0 A 104 104 0 0 0 104 0"/>
+ </defs>
+ <!-- faded gold clock face (THE WORLD / time) -->
+ <circle r="186" fill="url(#gold)"/>
+ <circle r="178" fill="none" stroke="#b8924a" stroke-opacity=".55" stroke-width="1.2"/>
+ <circle r="168" fill="none" stroke="#b8924a" stroke-opacity=".25" stroke-width=".6"/>
+ <g stroke="#c9a55a" stroke-linecap="round" id="ticks"></g>
+ <!-- cracks in the gold -->
+ <path d="M 120 -128 L 104 -104 L 112 -92 L 96 -70 L 103 -60" fill="none" stroke="#0f1013" stroke-width="2.2"/>
+ <path d="M -150 96 L -128 84 L -132 72 L -114 62" fill="none" stroke="#0f1013" stroke-width="1.8"/>
+ <!-- hands at 6:40 peeking out -->
+ <line x1="0" y1="0" x2="0" y2="-1" stroke="none"/>
+ <g stroke="#d9b36a" stroke-linecap="round" stroke-opacity=".9">
+  <line x1="0" y1="0" x2="0" y2="0" id="hh"/>
+ </g>
+ <!-- button housing -->
+ <rect x="-122" y="-122" width="244" height="244" rx="18" fill="#2a2d33" stroke="#3a3e46" stroke-width="2"/>
+ <rect x="-118" y="-118" width="236" height="236" rx="15" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="2"/>
+ <circle r="112" fill="url(#ring)"/>
+ <circle r="112" fill="none" stroke="#7a5a05" stroke-width="1.5"/>
+ <text font-family="GT" font-weight="700" font-size="13" letter-spacing="3" fill="#1a1a1a">
+  <textPath href="#arcTop" startOffset="50%" text-anchor="middle">EMERGENCY STOP</textPath></text>
+ <text font-family="GT" font-weight="700" font-size="14" letter-spacing="10" fill="#1a1a1a">
+  <textPath href="#arcBot" startOffset="50%" text-anchor="middle">비상정지</textPath></text>
+ <circle r="82" fill="#1b1b1b"/>
+ <circle r="78" cy="6" fill="#000" opacity=".5"/>
+ <circle r="76" fill="url(#dome)"/>
+ <ellipse cx="-24" cy="-34" rx="34" ry="18" fill="#fff" opacity=".22" transform="rotate(-25 -24 -34)"/>
+ <circle r="76" fill="none" stroke="#4a0703" stroke-width="2"/>
+</svg>
+<div class="title">시급 10,320원의 세계<small>세계는 멈추지 않는다</small></div>
+<div class="parts">
+ <span><b>1부</b>시급 10,320원의 세계</span>
+ <span><b>2부</b>무국적자의 겨울</span>
+ <span><b>3부</b>천국에 가는 법</span>
+ <span><b>특별편</b>비상정지</span>
+</div>
+<svg style="position:absolute;left:14mm;bottom:15mm;width:34mm;height:8mm" viewBox="0 0 170 40" id="tally"></svg>
+<div class="foot">김해 · 2026 — 2028</div>
+<div class="hazard bot"></div>
+</div>
+<script>
+// 60 clock ticks
+const g=document.getElementById('ticks');
+for(let i=0;i<60;i++){const a=i*6*Math.PI/180,big=i%5==0,r1=big?150:160,r2=172;
+ const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+ l.setAttribute('x1',r1*Math.sin(a));l.setAttribute('y1',-r1*Math.cos(a));
+ l.setAttribute('x2',r2*Math.sin(a));l.setAttribute('y2',-r2*Math.cos(a));
+ l.setAttribute('stroke-width',big?2.4:.9);l.setAttribute('stroke-opacity',big?.75:.4);g.appendChild(l);}
+// clock hands 06:40 (hour ~200deg, minute 240deg), drawn long so they show past the housing
+const hh=document.getElementById('hh').parentNode;hh.innerHTML='';
+[[200,145,5],[240,170,3]].forEach(([d,len,w])=>{const a=d*Math.PI/180;
+ const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+ l.setAttribute('x1',0);l.setAttribute('y1',0);l.setAttribute('x2',len*Math.sin(a));l.setAttribute('y2',-len*Math.cos(a));
+ l.setAttribute('stroke-width',w);hh.appendChild(l);});
+// pencil tally marks: 3 bundles of five + 2
+const t=document.getElementById('tally');let x=4;
+function ln(x1,y1,x2,y2){const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+ Object.entries({x1,y1,x2,y2}).forEach(([k,v])=>l.setAttribute(k,v));
+ l.setAttribute('stroke','#8d877b');l.setAttribute('stroke-width',2);l.setAttribute('stroke-linecap','round');t.appendChild(l);}
+for(let b=0;b<3;b++){for(let i=0;i<4;i++){const j=(i*7+b*3)%5-2;ln(x+i*9,6+j*.4,x+i*9+j*.5,34);}ln(x-4,30,x+31,10);x+=48;}
+ln(x,7,x+1,34);
+</script>
+</body></html>
